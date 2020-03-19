@@ -4,9 +4,9 @@ const morgan = require("morgan")
 const cors = require('cors')
 const server = express();
 
-const charcterRouter = require('../auth/character-router');
+const characterRouter = require('../auth/character-router');
 server.use(express.json());
-server.use("/api/characters", charcterRouter);
+server.use("/api/characters", characterRouter);
 server.use(helmet())
 server.use(morgan("dev"))
 server.use(cors())

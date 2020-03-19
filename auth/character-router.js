@@ -5,11 +5,16 @@ const router = express.Router()
 const Characters = require('./character-model');
 
 router.get('/', ( req, res)=>{
-    res.status(200).json({
-        message: `It is working great`
-        // Characters.find()
+    Characters.find()
+    .then(character=>{
+        res.status(200).json(character)
     })
-})
+    .catch(error=>{
+        res.status(500).json({
+        error: `This is an error ${error}`})
+    })
+    })
+
 
 
 

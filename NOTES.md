@@ -15,13 +15,18 @@
 11. `npm start`
 12. build server.js add router
 13. build index.js
-14. confirm morgan working in console.log helmet in postman
-15. build router
+14. confirm morgan working in console.log helmet in postman test api
+15. build character router
+16. create dbConfig.js file in database folder
+17. touch .env file PORT=8555
+18. build character model file
+
 
 1.` migrations: {
       directory: './database/migrations'
     },
     seeds: {
       directory: './database/seeds'
-    }`
+    },
+    useNullAsDefault: true`
  
