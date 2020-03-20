@@ -20,6 +20,10 @@
 16. create dbConfig.js file in database folder
 17. touch .env file PORT=8555
 18. build character model file
+19. `knex migrate:make <characters>`
+20. `knex migrate:latest`
+21. `knex seed:make 00_characters` build seed data
+22. `knex seed:run` view in http client
 
 
 1.` migrations: {
